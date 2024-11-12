@@ -1,0 +1,32 @@
+
+.cr-text{
+    font-size: 13px;
+    color: #000000;
+    font-size: 19px;
+    font-weight: 300;
+  }
+  
+  .cr-box{
+    margin-left: 5px;
+    background-color: #ededed;
+    /* border: 2px solid #303030; */
+    border-radius: 3px;
+    
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    /* max-width: 298px; */
+    /* margin: 20px auto;*/
+  }
+  
+  .div-cr-box{
+    padding: 3px;
+  }
+  
+  .cr-box:hover {
+    background-color: #ff3e00; /* Cambia el color de fondo al pasar el mouse */
+    color: white !important; /* Cambia el color del texto al pasar el mouse */
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la sombra */
+  }
+  /* .navbar-nav {
+    flex-grow: 1;
+  } */

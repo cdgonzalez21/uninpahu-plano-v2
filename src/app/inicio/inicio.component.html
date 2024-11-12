@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="check2" viewBox="0 0 16 16">
+      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+    </symbol>
+    <symbol id="circle-half" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+    </symbol>
+    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+      <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+      <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+    </symbol>
+    <symbol id="sun-fill" viewBox="0 0 16 16">
+      <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+    </symbol>
+  </svg>
+  
+  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (light)">
+      <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+      <span class="visually-hidden" id="bd-theme-text">Toggle themsed</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text" >
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
+          <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+          Light
+          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+          <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+          Dark
+          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+          <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+          Auto
+          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+  
+  
+  
+  
+  
+  <main>
+  
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item">
+      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+      <div class="container">
+        <div class="carousel-caption text-start">
+          <h1>Example headline.</h1>
+          <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+          <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Another example headline.</h1>
+          <p>Some representative placeholder content for the second slide of the carousel.</p>
+          <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item active">
+      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+      <div class="container">
+        <div class="carousel-caption text-end">
+          <h1>One more for good measure.</h1>
+          <p>Some representative placeholder content for the third slide of this carousel.</p>
+          <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div>
+  
+  
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+  
+  <div class="container marketing">
+  
+    <hr class="featurette-divider">
+  
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Presentación</h2> 
+        <p class="lead">Nuestro objetivo es capacitar a los estudiantes universitarios de la facultad de ingeniería para que se orienten eficazmente dentro del campus, brindándoles una herramienta intuitiva y accesible que les permita localizar sus aulas. Buscando mejorar la puntualidad y eficiencia en la asistencia a clases. A través del uso de un mapa interactivo, instrucciones paso a paso, nuestra meta es apoyar la adaptación rápida de los estudiantes al campus, fomentando una experiencia académica más integrada y enfocada en el aprendizaje. Además, se espera que con ello se contribuya al desarrollo de habilidades en el uso de tecnologías, potenciando la autonomía y la organización de los estudiantes en su vida universitaria.  </p>
+      </div>
+      <div class="col-md-5">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="https://uninpahu.edu.co/wp-content/uploads/2024/05/Inpauhu-en-sus-inicios-y-fundacion.png" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> -->
+        <!-- <img loading="lazy" decoding="async" width="500" height="500" src="https://uninpahu.edu.co/wp-content/uploads/2024/05/Inpauhu-en-sus-inicios-y-fundacion.png" class="attachment-large size-large wp-image-2022" alt="Historia de UnInpauhu" srcset="https://uninpahu.edu.co/wp-content/uploads/2024/05/Inpauhu-en-sus-inicios-y-fundacion.png 763w, https://uninpahu.edu.co/wp-content/uploads/2024/05/Inpauhu-en-sus-inicios-y-fundacion-300x214.png 300w" sizes="(max-width: 763px) 100vw, 763px"> -->
+        <div class="video-container" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+          <video width="640" height="360" [style.display]="isHovered ? 'none' : 'block'" autoplay muted loop>
+            <source [src]="videoUrl" type="video/mp4">
+            Tu navegador no soporta el video.
+          </video>
+        </div>
+      </div>
+      <div class="d-grid gap-2 d-md-block">
+        <button class="btn btn-primary" type="button" style="    background: #ff6700;    border-color: #ff6700;"><i class="fa fa-play-circle" aria-hidden="true"></i> </button>
+      </div>
+    </div>
+  
+  <!-- START THE FEATURETTES -->
+  
+  <hr class="featurette-divider">
+  
+  <div class="row featurette">
+    <div class="col-md-7">
+      <!-- <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2> -->
+      <p class="lead">La Fundación Universitaria 
+
+        para el Desarrollo Humano – 
+        
+        UNINPAHU fue creada en 1974 por el insigne psicólogo 
+        
+        Hernán Linares Ángel. 
+        
+        En la actualidad es una institución educativa que maneja múltiples programas y en este caso el OVA se enfocará en su programa con la facultad de ingeniería. </p>
+    </div>
+    <div class="col-md-5">
+      <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="https://uninpahu.edu.co/wp-content/uploads/2024/05/Inpauhu-en-sus-inicios-y-fundacion.png" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> -->
+      <img loading="lazy" decoding="async" width="500" height="500" src="https://uninpahu.edu.co/wp-content/uploads/2024/05/Inpauhu-en-sus-inicios-y-fundacion.png" class="attachment-large size-large wp-image-2022" alt="Historia de UnInpauhu" srcset="https://uninpahu.edu.co/wp-content/uploads/2024/05/Inpauhu-en-sus-inicios-y-fundacion.png 763w, https://uninpahu.edu.co/wp-content/uploads/2024/05/Inpauhu-en-sus-inicios-y-fundacion-300x214.png 300w" sizes="(max-width: 763px) 100vw, 763px">
+    </div>
+  </div>
+  
+  <hr class="featurette-divider">
+  
+  <div class="row featurette">
+    <div class="col-md-6 order-md-2">
+      <h2 class="featurette-heading fw-normal lh-1"><i class="fa fa-flag-o" aria-hidden="true"></i><span class="text-body-secondary"><strong> Misión</strong></span></h2>
+      <p class="lead">La Institución tiene como misión la formación integral de personas con competencias para asumir, aplicar y transferir los conocimientos e impactar positivamente en la realidad social y contribuir al desarrollo sostenible de la nación.
+
+        Resolución No. 002070 del 05 de marzo de 2019 del MEN. Reforma Estatutaria de UNINPAHU</p>
+    </div>
+    <div class="col-md-6 order-md-1">
+      <img decoding="async" class="uet_opposite_img" width="500" height="350" src="https://uninpahu.edu.co/wp-content/uploads/2024/05/Inpahu-Bogota12.jpeg" alt="seleccionar una Universidad de Pregrado en Bogotá unipahu" title="Inpahu Bogota12">
+    </div>
+  </div>
+  
+  <hr class="featurette-divider">
+  
+  <div class="row featurette">
+    <div class="col-md-6">
+      <h2 class="featurette-heading fw-normal lh-1"><i class="fa fa-eye" aria-hidden="true"></i><span class="text-body-secondary"><strong> Visión</strong></span></h2>
+      <p class="lead">En el año 2028 UNINPAHU logrará consolidarse como una institución competitiva y sostenible, reconocida por su formación académica integral y su destacado Método de Alto Rendimiento M.A.R., a partir del fortalecimiento del bienestar institucional y servicios educativos, la inclusión social, la interacción con el entorno e impacto de los egresados, la gestión de la investigación – creación y la transferencia del conocimiento, la transformación digital de sus procesos y la consolidación de un talento humano excepcional.</p>
+    </div>
+    <div class="col-md-6">
+      <img decoding="async" class="uet_opposite_img" width="550" height="450" src="https://uninpahu.edu.co/wp-content/uploads/2024/05/Inpahu-Bogota5.jpeg" alt="seleccionar una Universidad de Pregrado en Bogotá unipahu" title="Inpahu Bogota12">
+    </div>
+  </div>
+  
+  <hr class="featurette-divider">
+  
+  <!-- /END THE FEATURETTES -->
+  
+  </div><!-- /.container -->
+
+  
+  <!-- FOOTER -->
+  
+  </main>
+  
+  
+  
+  
+  
