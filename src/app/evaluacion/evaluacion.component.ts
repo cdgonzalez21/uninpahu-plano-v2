@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-evaluacion',
@@ -9,4 +10,13 @@ import { Component } from '@angular/core';
 })
 export class EvaluacionComponent {
 
+
+
+  Enviar(){
+    Swal.fire({
+      title: "¡Buen trabajo!",
+      text: "Respuestas Enviadas",
+      icon: "success"
+    });
+  }
 }

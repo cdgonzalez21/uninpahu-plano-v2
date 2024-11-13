@@ -1,0 +1,8 @@
+.evaluacion_cr{
+    width: 42%;
+    background: #ededed;
+    border: 3px solid #cfcfcf;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0px 0px 8px rgb(137 137 137 / 60%);
+}
