@@ -1,46 +1,7 @@
-<div class="row" *ngIf="active==false">
-    <div class="col col-lg-4">
-        <input type="text" #inputRef class="form-control" placeholder="Ingrese el nombre" (change)="nombre()"aria-describedby="btnGroupAddon">
-    </div>
-    <div class="col col-lg-12">
-        <div class="certificate-container" id="certificate-container">
-            <div class="header">Certificado de Felicitaciones</div>
-            <div class="subheader">Por su dedicación y esfuerzo</div>
-
-            <div class="message">
-                Se otorga el presente certificado a:
-            </div>
-
-            <div class="recipient-name">
-                {{Certificado}}
-            </div>
-
-            <div class="message">
-                Por su destacada participación y logros alcanzados en el curso.
-            </div>
-
-            <div class="footer">
-                ¡Felicidades por tu arduo trabajo y dedicación!
-            </div>
-
-            <div class="signature">
-                Firma del Director<br>
-                Universidad UNINPAHU
-            </div>
-        </div>
-    </div>
-    <div class="container text-center">
-        <div class="row">
-          <div class="col-sm-12"><button class="btn btn-primary" type="button" (click)="generatePDF()" style="    background: #ff6700;    border-color: #ff6700;"><i class="fa fa-download" aria-hidden="true"></i> Descargar  </button></div>          
-        </div>        
-      </div>
-
-</div>
-
-<div class="container evaluacion_cr" *ngIf="active==true">
+<div class="container evaluacion_cr">
     <div class="row justify-content-md-center">
         <div class="col col-lg-12">
-            <label for="exampleFormControlInput1" class="form-label"><h3> Cuestionario de Evaluación</h3> 
+            <label for="exampleFormControlInput1" class="form-label"><h3> Encuesta de Satisfacción </h3> 
                 
                 Interacción con la
                 Aplicación de Búsqueda de Salones en el Mapa
@@ -48,124 +9,208 @@
         </div>
 <hr>
         <div class="col col-lg-12">
-            <label for="exampleFormControlInput1" class="form-label">¿Qué tan bien conoces la ubicación de las aulas?</label>
+            <label for="exampleFormControlInput1" class="form-label">¿Cómo calificarías la facilidad de uso del
+                aplicativo?</label>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="question1flexRadioDefault1">
                 <label class="form-check-label" for="question1flexRadioDefault1">
-                    a) Conozco perfectamente la ubicación de todas las aulas.
+                    Muy difícil de usar
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="question1flexRadioDefault2"
                     checked>
                 <label class="form-check-label" for="question1flexRadioDefault2">
-                    b) Conozco la ubicación de la mayoría de las aulas.
+                    Algo difícil de usar
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="question1flexRadioDefault3"
                     checked>
                 <label class="form-check-label" for="question1flexRadioDefault3">
-                    c) Conozco la ubicación de algunas aulas, pero tengo dudas.
+                    Neutro
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="question1flexRadioDefault4"
                     checked>
                 <label class="form-check-label" for="question1flexRadioDefault4">
-                    d) No tengo idea de la ubicación de las aulas.
+                    Fácil de usar
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="question1flexRadioDefault5"
                     checked>
                 <label class="form-check-label" for="question1flexRadioDefault5">
-                    e) No me siento seguro/a en la ubicación de las aulas, siempre me siento perdido/a.
+                    Muy fácil de usar
                 </label>
             </div>
         </div>
 
 
         <div class="col col-lg-12">
-            <label for="exampleFormControlInput1" class="form-label">¿Qué tan familiarizado estás con los protocolos y reglas que se aplican en cada aula?</label>
+            <label for="exampleFormControlInput1" class="form-label">¿Fue fácil navegar por el mapa y encontrar la
+                ubicación de los salones?</label>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="question2flexRadioDefault"
                     id="question2flexRadioDefault1">
                 <label class="form-check-label" for="question2flexRadioDefault1">
-                    a) Conozco todos los protocolos y reglas de cada aula y siempre los sigo.
+                    Muy difícil
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="question2flexRadioDefault"
                     id="question2flexRadioDefault2">
                 <label class="form-check-label" for="question2flexRadioDefault2">
-                    b) Conozco la mayoría de los protocolos y reglas y los sigo en su mayoría.
+                    Algo difícil
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="question2flexRadioDefault"
                     id="question2flexRadioDefault3">
                 <label class="form-check-label" for="question2flexRadioDefault3">
-                    c) Tengo una idea general de los protocolos y reglas, pero no siempre los sigo.
+                    Neutro
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="question2flexRadioDefault"
                     id="question2flexRadioDefault4">
                 <label class="form-check-label" for="question2flexRadioDefault4">
-                    d) No conozco los protocolos y reglas, pero me gustaría saber más.
+                    Fácil
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="question2flexRadioDefault"
                     id="question2flexRadioDefault5" checked>
                 <label class="form-check-label" for="question2flexRadioDefault5">
-                    e) No tengo idea de los protocolos y reglas en las aulas.
+                    Muy fácil
                 </label>
             </div>
         </div>
 
 
         <div class="col col-lg-12">
-            <label for="exampleFormControlInput1" class="form-label">¿Cuán seguro/a te sientes al conocer las rutas de evacuación en caso de emergencia en tu aula?</label>
+            <label for="exampleFormControlInput1" class="form-label">¿El aplicativo mostró con precisión la ubicación de
+                los salones que buscabas?</label>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="question3flexRadioDefault"
                     id="question3flexRadioDefault1">
                 <label class="form-check-label" for="question3flexRadioDefault1">
-                    a) Estoy completamente seguro/a y conozco todas las rutas de evacuación.
+                    Siempre precisa
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="question3flexRadioDefault"
                     id="question3flexRadioDefault2">
                 <label class="form-check-label" for="question3flexRadioDefault2">
-                    b) Conozco las rutas de evacuación, pero no me siento completamente seguro/a.
+                    Generalmente precisa
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="question3flexRadioDefault"
                     id="question3flexRadioDefault3">
                 <label class="form-check-label" for="question3flexRadioDefault3">
-                    c) Conozco alguna ruta de evacuación, pero no todas.
+                    Neutra
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="question3flexRadioDefault"
                     id="question3flexRadioDefault4">
                 <label class="form-check-label" for="question3flexRadioDefault4">
-                    d) No estoy seguro/a de las rutas de evacuación.
+                    Generalmente inexacta
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="question3flexRadioDefault"
                     id="question3flexRadioDefault5" checked>
                 <label class="form-check-label" for="question3flexRadioDefault5">
-                    e) No conozco ninguna ruta de evacuación.
+                    Muy inexacta
                 </label>
             </div>
         </div>
 
 
+        <div class="col col-lg-12">
+            <label for="exampleFormControlInput1" class="form-label">¿Cuánto tiempo te llevó encontrar un salón
+                específico en el mapa?</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="question4flexRadioDefault"
+                    id="question4flexRadioDefault1">
+                <label class="form-check-label" for="question4flexRadioDefault1">
+                    Menos de un minuto
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="question4flexRadioDefault"
+                    id="question4flexRadioDefault2">
+                <label class="form-check-label" for="question4flexRadioDefault2">
+                    Entre 1 y 3 minutos
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="question4flexRadioDefault"
+                    id="question4flexRadioDefault3">
+                <label class="form-check-label" for="question4flexRadioDefault3">
+                    Entre 3 y 5 minutos
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="question4flexRadioDefault"
+                    id="question4flexRadioDefault4">
+                <label class="form-check-label" for="question4flexRadioDefault4">
+                    Más de 5 minutos
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="question4flexRadioDefault"
+                    id="question4flexRadioDefault5" checked>
+                <label class="form-check-label" for="question4flexRadioDefault5">
+                    Satisfacción general
+                </label>
+            </div>
+        </div>
+
+
+
+        <div class="col col-lg-12">
+            <label for="exampleFormControlInput1" class="form-label">¿Cómo calificarías tu satisfacción general con el
+                aplicativo?</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="question5flexRadioDefault"
+                    id="question5flexRadioDefault1">
+                <label class="form-check-label" for="question5flexRadioDefault1">
+                    Muy insatisfecho
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="question5flexRadioDefault"
+                    id="question5flexRadioDefault2">
+                <label class="form-check-label" for="question5flexRadioDefault2">
+                    Insatisfecho
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="question5flexRadioDefault"
+                    id="question5flexRadioDefault3">
+                <label class="form-check-label" for="question5flexRadioDefault3">
+                    Neutral
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="question5flexRadioDefault"
+                    id="question5flexRadioDefault4">
+                <label class="form-check-label" for="question5flexRadioDefault4">
+                    Satisfecho
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="question5flexRadioDefault"
+                    id="question5flexRadioDefault5" checked>
+                <label class="form-check-label" for="question5flexRadioDefault5">
+                    Muy satisfecho
+                </label>
+            </div>
+        </div>
         
     </div>
     <div class="container text-center">
@@ -176,4 +221,3 @@
         
       </div>
 </div>
-

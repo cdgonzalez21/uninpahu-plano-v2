@@ -3,6 +3,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { PlanoEdificioComponent } from './plano-edificio/plano-edificio.component';
 import { CreditosComponent } from './creditos/creditos.component';
 import { EvaluacionComponent } from './evaluacion/evaluacion.component';
+import { EncuestaComponent } from './encuesta/encuesta.component';
 
 
 
@@ -11,6 +12,7 @@ export const routes: Routes = [
     { path: 'Inicio', component: InicioComponent },
     { path: 'Busqueda', component: PlanoEdificioComponent },
     { path: 'Creditos', component: CreditosComponent },
-    { path: 'Evaluacion', component: EvaluacionComponent }
+    { path: 'Evaluacion', component: EvaluacionComponent },
+    { path: 'Encuesta', component: EncuestaComponent }
 ];
 

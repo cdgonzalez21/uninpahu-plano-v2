@@ -66,7 +66,7 @@ buscar(){
   if(this.listaSalon.find(x=>x.id==this.idsalonactive )!=undefined){
     Swal.fire({
       title: "salón - "+this.idsalonactive ,
-      text: "El salón sale marcado con el plano de la universidad ",
+      text: "El salón sale marcado en el plano de la universidad ",
       icon: "success"
     });
     const salon = this.listaSalon.find(x => x.id == this.idsalonactive );

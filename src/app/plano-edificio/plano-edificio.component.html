@@ -41,8 +41,11 @@
       </div>
       <br>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-4">
           <button class="btn btn-primary" type="button" style="    background: #ff6700;    border-color: #ff6700;" (click)="mapa()"><i class="fa fa-map-o" aria-hidden="true"></i> {{labelBotonMapa}}</button>
+        </div>
+        <div class="col-md-12">
+          
         </div>
         <div class="col-md-8">
           <div class="plano-container" *ngIf="activeMapa==false">
@@ -113,13 +116,29 @@
         </div>
       
    
-    <div class="col col-lg-2">
+    <div class="col col-lg-4">
       <div class="video-container" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
-        <video width="640" height="360" [style.display]="isHovered ? 'none' : 'block'" autoplay muted loop>
+        <video width="640" height="360" [style.display]="isHovered ? 'none' : 'block'" autoplay muted loop style="margin-left: -10%;">
           <source [src]="videoUrl" type="video/mp4">
           Tu navegador no soporta el video.
         </video>
       </div>
+      <strong> <label>Normas del aula</label></strong>
+      <br>
+      <label>
+        1. Icono de silencio: esto indica que se debe antener en silencio en momentos de concentracion o cuando el maestro este hablando.
+        <br>
+        2. Prohibido comer los estudiantes: No deben comer en clase excepto en tiempos desiganos como en recesos o pausas.
+        <br>
+        3. Uso adecuado de los dispositivos electronicos: Los dispositivos deben ser utilizados solo con fines educativos y bajo la supervision del maestro.
+        <br>
+        4. Uso adecuado de los recursos del aula: El uso responsable de los rescursos permite que todos sus estudiantes tengas acceso a ellos cuando los necesiten.
+      </label>
+      <br>
+    <audio controls loop>
+      <source src="../../assets/11_ Las normas de aula.mp3" type="audio/mp3">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
     </div>
      </div>
   </div>
