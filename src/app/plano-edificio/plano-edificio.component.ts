@@ -78,7 +78,22 @@ buscar(){
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "El salón no existe",      
+      html: `
+      <label>El salón no existe, tener en cuenta que los datos sean solo números, revisar si se encuentra el salón en la lista de la pantalla principal</label>
+ <div class="video-container" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+        <video width="640" height="360" [style.display]="isHovered ? 'none' : 'block'" autoplay muted loop style="margin-left: -10%;">
+          <source src="../../assets/animacion1.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+      </div>
+    `,   confirmButtonText: `Cerrar`,
+      showCloseButton: true,
+      customClass: {
+        popup: 'custom-large-swal-popup',
+        title: 'custom-large-swal-title',
+        htmlContainer: 'custom-large-swal-html',        
+      confirmButton: 'custom-large-swal-confirm',
+      }    
     });
   }  
 }
@@ -86,6 +101,35 @@ buscar(){
 mapa(){
   this.labelBotonMapa =this.labelBotonMapa=="Mapa de Ruta de Evacuación" ?"Mapa de los salones":"Mapa de Ruta de Evacuación";
   this.activeMapa = this.labelBotonMapa=="Mapa de Ruta de Evacuación" ?false:true;  
+}
+
+Informacion() {
+  Swal.fire({
+    title: "<strong>Información de búsqueda!</strong>",
+    html: `
+      <div class="video-container">
+        <iframe 
+          width="640" 
+          height="360" 
+          src="https://www.youtube.com/embed/wqy9tYrc6Es?autoplay=1&loop=1&playlist=wqy9tYrc6Es&modestbranding=1&showinfo=0&rel=0&controls=0&cc_load_policy=1" 
+          frameborder="0" 
+          allow="autoplay; encrypted-media" 
+          allowfullscreen>
+        </iframe>
+        <div class="overlay"></div>
+      </div>
+    `,
+    showCloseButton: true,
+    focusConfirm: false,
+    confirmButtonText: `Cerrar`,
+    customClass: {
+      popup: 'custom-large-swal-popup',
+      title: 'custom-large-swal-title',
+      htmlContainer: 'custom-large-swal-html',
+      confirmButton: 'custom-large-swal-confirm',
+      cancelButton: 'custom-large-swal-cancel'
+    }
+  });
 }
     
 }

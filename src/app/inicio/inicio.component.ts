@@ -10,7 +10,7 @@ import Swal from 'sweetalert2';
 })
 export class InicioComponent {
 
-  videoUrl = 'assets/animacion1.mp4'; // Ruta del video
+  videoUrl = 'assets/aminacion2.mp4'; // Ruta del video
   isHovered = false;
     // Ejemplo de lógica para hacer clic en una sala
     onRoomClick(room: string) {
@@ -31,30 +31,6 @@ export class InicioComponent {
     this.isHovered = false; // Cuando el mouse sale del video
   }
   video() {
-    // Swal.fire({
-    //   title: "<strong>Video Tutorial</strong>",      
-    //   html: `
-    //     <div class="video-container">
-    //       <iframe 
-    //         width="640" 
-    //         height="360" 
-    //         src="https://www.youtube.com/embed/wqy9tYrc6Es?autoplay=1&mute=1&loop=1&playlist=wqy9tYrc6Es&modestbranding=1&showinfo=0&rel=0&controls=0" 
-    //         frameborder="0" 
-    //         allow="autoplay; encrypted-media" 
-    //         allowfullscreen>
-    //       </iframe>
-    //       <div class="overlay"></div>
-    //     </div>
-    //   `,
-    //   showCloseButton: true,
-    //   focusConfirm: false,
-    //   confirmButtonText: `
-    //     <i class="fa fa-thumbs-up"></i> 
-    //   `,
-    //   customClass: {
-    //     htmlContainer: 'custom-swal-html'
-    //   }
-    // });
     Swal.fire({
       title: "<strong>¡Bienvenido!</strong>",
       html: `
@@ -71,10 +47,8 @@ export class InicioComponent {
         </div>
       `,
       showCloseButton: true,
-      showCancelButton: true,
       focusConfirm: false,
-      confirmButtonText: `Aceptar`,
-      cancelButtonText: `Cancelar`,
+      confirmButtonText: `Cerrar`,
       customClass: {
         popup: 'custom-large-swal-popup',
         title: 'custom-large-swal-title',

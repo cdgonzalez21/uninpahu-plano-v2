@@ -43,7 +43,7 @@ Certificado:string="";
         // Crear un enlace para descargar la imagen
         const link = document.createElement('a');
         link.href = imgData;  // Establecer el contenido de la imagen como el href del enlace
-        link.download = 'captura.png';  // Nombre del archivo a descargar
+        link.download = 'Certificado.png';  // Nombre del archivo a descargar
         link.click();  // Disparar el clic para descargar la imagen
       });
     }
