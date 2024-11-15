@@ -6,3 +6,47 @@ body{
 .cr-bg-light {
     background-color: rgb(237 237 237) !important;
 }
+
+/* .swal2-popup .swal2-modal .custom-large-swal-popup .swal2-icon-info .swal2-show{
+  width: 52em!important;
+}
+
+div:where(.swal2-container) div:where(.swal2-popup){
+  display: none;
+  position: relative;
+  box-sizing: border-box;
+  grid-template-columns: minmax(0, 100%);
+  width: 52em!important;
+  max-width: 100%;
+  padding: 0 0 1.25em;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  color: hsl(0, 0%, 33%);
+  font-family: inherit;
+  font-size: 1rem;
+} */
+
+/* Estilo de la ventana principal ampliada */
+.custom-large-swal-popup {
+  width: 800px; /* Ancho de la ventana del modal */
+  padding: 30px; /* Espaciado interno de la ventana */
+  font-size: 18px; /* Tamaño de fuente más grande */
+}
+/* Contenido HTML personalizado */
+.custom-large-swal-html {
+  font-size: 20px;
+  color: #666;
+  text-align: left;
+}
+
+/* Botón de confirmación */
+.custom-large-swal-confirm {
+  background-color: #ff6700;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+}
