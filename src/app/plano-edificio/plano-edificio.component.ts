@@ -86,6 +86,11 @@ buscar(){
           Tu navegador no soporta el video.
         </video>
       </div>
+        <br>
+    <audio controls loop>
+      <source src="../../assets/Error de búsqueda.mp3" type="audio/mp3">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
     `,   confirmButtonText: `Cerrar`,
       showCloseButton: true,
       customClass: {
@@ -111,7 +116,7 @@ Informacion() {
         <iframe 
           width="640" 
           height="360" 
-          src="https://www.youtube.com/embed/wqy9tYrc6Es?autoplay=1&loop=1&playlist=wqy9tYrc6Es&modestbranding=1&showinfo=0&rel=0&controls=0&cc_load_policy=1" 
+          src="https://www.youtube.com/embed/zDiiSGhrgk0?autoplay=1&loop=1&playlist=zDiiSGhrgk0&modestbranding=1&showinfo=0&rel=0&controls=0&cc_load_policy=1" 
           frameborder="0" 
           allow="autoplay; encrypted-media" 
           allowfullscreen>
